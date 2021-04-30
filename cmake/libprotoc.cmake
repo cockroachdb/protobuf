@@ -1,4 +1,13 @@
-# CMake definitions for libprotoc (the protobuf compiler library).
+set(libprotoc_files
+  ${protobuf_source_dir}/src/google/protobuf/compiler/code_generator.cc
+  ${protobuf_source_dir}/src/google/protobuf/compiler/command_line_interface.cc
+  ${protobuf_source_dir}/src/google/protobuf/compiler/js/js_generator.cc
+  ${protobuf_source_dir}/src/google/protobuf/compiler/js/well_known_types_embed.cc
+  ${protobuf_source_dir}/src/google/protobuf/compiler/plugin.cc
+  ${protobuf_source_dir}/src/google/protobuf/compiler/plugin.pb.cc
+  ${protobuf_source_dir}/src/google/protobuf/compiler/subprocess.cc
+  ${protobuf_source_dir}/src/google/protobuf/compiler/zip_writer.cc
+)
 
 include(${protobuf_SOURCE_DIR}/src/file_lists.cmake)
 include(${protobuf_SOURCE_DIR}/cmake/protobuf-configure-target.cmake)

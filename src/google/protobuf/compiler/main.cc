@@ -54,9 +54,9 @@ int ProtobufMain(int argc, char* argv[]) {
 #endif
 
   // Proto2 Java
-  java::JavaGenerator java_generator;
-  cli.RegisterGenerator("--java_out", "--java_opt", &java_generator,
-                        "Generate Java source file.");
+  // java::JavaGenerator java_generator;
+  // cli.RegisterGenerator("--java_out", "--java_opt", &java_generator,
+  //                       "Generate Java source file.");
 
 #ifdef GOOGLE_PROTOBUF_RUNTIME_INCLUDE_BASE
   java_generator.set_opensource_runtime(true);
@@ -93,14 +93,14 @@ int ProtobufMain(int argc, char* argv[]) {
                         "Generate Ruby source file.");
 
   // CSharp
-  csharp::Generator csharp_generator;
-  cli.RegisterGenerator("--csharp_out", "--csharp_opt", &csharp_generator,
-                        "Generate C# source file.");
+  // csharp::Generator csharp_generator;
+  // cli.RegisterGenerator("--csharp_out", "--csharp_opt", &csharp_generator,
+  //                       "Generate C# source file.");
 
   // Objective-C
-  objectivec::ObjectiveCGenerator objc_generator;
-  cli.RegisterGenerator("--objc_out", "--objc_opt", &objc_generator,
-                        "Generate Objective-C header and source.");
+  //objectivec::ObjectiveCGenerator objc_generator;
+  //cli.RegisterGenerator("--objc_out", "--objc_opt", &objc_generator,
+  //                      "Generate Objective-C header and source.");
 
   // Rust
   rust::RustGenerator rust_generator;
